@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #292c34;
+  color: #ffffff;
+}
+
+header {
+  background: #ffffff;
+  padding: 20px;
+}
+header h1 {
+  color: #292c34;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#scoreboard {
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+}
+#scoreboard .badge {
+  background: #e2582d;
+  color: #fff;
+  font-size: 14px;
+  font-family: sans-serif;
+  padding: 2px 10px;
+}
+#scoreboard #user-label {
+  position: absolute;
+  top: 27px;
+  left: -27px;
+}
+#scoreboard #comp-label {
+  position: absolute;
+  top: 27px;
+  right: -27px;
+}
+
+.result {
+  font-size: 25px;
+}
+.result p {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.choices {
+  margin: 50px 0;
+  text-align: center;
+}
+.choices .choice {
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 60px;
+  margin: 0 10px;
+  padding: 10px 20px;
+}
+.choices .choice:hover {
+  cursor: pointer;
+  color: #e2582d;
+  border-color: #e2582d;
+  transition: all 0.2s ease-out;
+}
+
+#action-message {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+$primary-color: #292c34;
+$secondary-color: #ffffff;
+$highlight-color: #e2582d;
+$font: sans-serif;
+$font2: sans-serif;
+
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin easeOut {
+  transition: all 0.2s ease-out;
+}
