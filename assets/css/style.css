@@ -19,7 +19,7 @@ header h1 {
   font-family: sans-serif;
 }
 
-#scoreboard {
+#scoreBoard {
   border: 3px solid #ffffff;
   border-radius: 3px;
   font-family: sans-serif;
@@ -30,19 +30,19 @@ header h1 {
   text-align: center;
   width: 200px;
 }
-#scoreboard .badge {
+#scoreBoard .badge {
   background: #e2582d;
   color: #fff;
   font-size: 14px;
   font-family: sans-serif;
   padding: 2px 10px;
 }
-#scoreboard #user-label {
+#scoreBoard #userLabel {
   position: absolute;
   top: 27px;
   left: -27px;
 }
-#scoreboard #comp-label {
+#scoreBoard #compLabel {
   position: absolute;
   top: 27px;
   right: -27px;
