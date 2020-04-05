@@ -26,7 +26,7 @@ function game(userChoice) {
       lose(userChoice, computerChoice);
       break;
     default:
-      draw();
+      draw(userChoice, computerChoice);
   }
 }
 
@@ -56,6 +56,10 @@ function win(userChoice, computerChoice) {
   result_p.innerHTML = `${capitalize(userChoice)} beats ${capitalize(
     computerChoice
   )}! YOU WIN!`;
+  document.getElementById(userChoice).classList.add("green-glow");
+  setTimeout(function() {
+    document.getElementById(userChoice).classList.remove("green-glow");
+  }, 300);
 }
 
 function lose(userChoice, computerChoice) {
@@ -64,10 +68,18 @@ function lose(userChoice, computerChoice) {
   result_p.innerHTML = `${capitalize(userChoice)} loses to ${capitalize(
     computerChoice
   )}! YOU LOSE!`;
+  document.getElementById(userChoice).classList.add("red-glow");
+  setTimeout(function() {
+    document.getElementById(userChoice).classList.remove("red-glow");
+  }, 300);
 }
 
-function draw() {
+function draw(userChoice, computerChoice) {
   result_p.innerHTML = "It's a draw...";
+  document.getElementById(userChoice).classList.add("gray-glow");
+  setTimeout(function() {
+    document.getElementById(userChoice).classList.remove("gray-glow");
+  }, 300);
 }
 
 function capitalize(string) {

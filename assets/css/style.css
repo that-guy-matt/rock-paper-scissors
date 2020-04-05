@@ -71,9 +71,19 @@ header h1 {
 }
 .choices .choice:hover {
   cursor: pointer;
-  color: #e2582d;
-  border-color: #e2582d;
   transition: all 0.2s ease-out;
+}
+.choices .green-glow {
+  border: 4px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+}
+.choices .red-glow {
+  border: 4px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
+}
+.choices .gray-glow {
+  border: 4px solid #464647;
+  box-shadow: 0 0 10px #25292b;
 }
 
 #action-message {

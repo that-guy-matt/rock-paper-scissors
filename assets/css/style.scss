@@ -78,10 +78,25 @@ header {
 
     &:hover {
       cursor: pointer;
-      color: $highlight-color;
-      border-color: $highlight-color;
+      // color: $highlight-color;
+      // border-color: $highlight-color;
       @include easeOut();
     }
+  }
+
+  .green-glow {
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+  }
+
+  .red-glow {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+  }
+
+  .gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
   }
 }
 
